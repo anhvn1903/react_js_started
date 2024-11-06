@@ -1,16 +1,16 @@
 const SecondComponent = () => {
     return(
-        <div>
-            second component
-        </div>
+        <>
+           <h1>second component</h1>
+        </>
     )
 }
 
 const ThirdComponent = () => {
     return(
-        <div>
-            second component
-        </div>
+        <>
+            <h1>third component</h1>
+        </>
     )
 }
 export {SecondComponent, ThirdComponent} 
