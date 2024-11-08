@@ -10,13 +10,21 @@ const App = () => {
     address: "hanoi",
     country: "vietnam",
   };
+  const addNewToDo = (name) => {
+    alert(`call me ${name}`);
+  };
 
   return (
     <>
       <div className="todo-container">
         <div className="todo-title">Todo List</div>
-        <ToDoNew />
-        <ToDoData name={hoidanit} age={age} data={data} />
+        <ToDoNew addNewToDo={addNewToDo} />
+        <ToDoData
+          name={hoidanit}
+          age={age}
+          data={data}
+          //addNewToDo không có đóng mở ngoặc vì js chỉ gọi hàm chứ chưa thực thi, nếu có dấu () thì hàm sẽ được thực thi luon
+        />
         <div className="todo-image">
           <img src={reactLogo} className="logo" />
         </div>
